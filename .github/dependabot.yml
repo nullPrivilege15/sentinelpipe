@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/app/vulnerable/web"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/app/patched/web"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "docker"
+    directory: "/app/vulnerable/web"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "docker"
+    directory: "/app/patched/web"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
