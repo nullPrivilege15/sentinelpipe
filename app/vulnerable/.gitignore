@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+web/logs/
+*.pages
+.DS_Store
+.vscode/

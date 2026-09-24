@@ -1,0 +1,18 @@
+# Environments
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+
+# App logs (fixture apps write these locally)
+app/vulnerable/web/logs/*.jsonl
+app/patched/web/logs/*.jsonl
+
+# Build/tooling output (will be populated in later phases)
+reports/*.tmp

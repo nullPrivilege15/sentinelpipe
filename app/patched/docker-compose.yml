@@ -1,0 +1,18 @@
+services:
+  web:
+    build: ./web
+    container_name: patched-llm-lab-web
+    ports:
+      - "5001:5000"
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./web/logs:/app/logs
+    networks:
+      - patched-lab-net
+
+networks:
+  patched-lab-net:
+    name: patched-lab-net

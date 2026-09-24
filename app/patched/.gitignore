@@ -1,0 +1,3 @@
+web/logs/*.jsonl
+*.save
+*.swp
