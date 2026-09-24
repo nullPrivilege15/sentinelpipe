@@ -1,0 +1,5 @@
+# CODEOWNERS
+# Default: all files require review from the repo owner.
+# Solo-maintainer project — this exists for Scorecard/best-practice
+# signal and to establish the pattern for future collaborators.
+* @nullPrivilege15
